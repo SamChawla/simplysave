@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    # local apps
+    "accounts",
 ]
 
 MIDDLEWARE = [
@@ -50,6 +52,10 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = "simply_save.urls"
+
+# settings.py
+AUTH_USER_MODEL = 'accounts.CustomUser'
+
 
 TEMPLATES = [
     {
