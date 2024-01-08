@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     #local apps
+    "accounts",
     "bookmarks.apps.BookmarksConfig",
 ]
 
@@ -52,6 +53,10 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = "simply_save.urls"
+
+# settings.py
+AUTH_USER_MODEL = 'accounts.CustomUser'
+
 
 TEMPLATES = [
     {
