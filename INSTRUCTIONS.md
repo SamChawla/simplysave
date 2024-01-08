@@ -48,4 +48,17 @@
 
 Visit [http://127.0.0.1:8000/](http://127.0.0.1:8000/) in your web browser to see if the project is up and running.
 
-That's it! You've successfully set up a Django project named "Simply Save." Feel free to explore and start building your web applications.
+## Create Bookmark App
+
+6. Create Bookmark App
+
+    ```bash
+    python manage.py startapp bookmark
+    ```
+
+7. Register Bookmark inside INSTALLED_APP in settings.
+    
+    "bookmark.apps.BookmarkConfig"
+
+8. Add URLS
+
