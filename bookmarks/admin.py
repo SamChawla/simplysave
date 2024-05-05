@@ -6,7 +6,7 @@ from .models import Bookmark
 
 # Register your models here.
 class BookmarkAdmin(admin.ModelAdmin):
-    list_display = ("show_title", "description", "is_public", "user", "tag_list")
+    list_display = ("pk", "show_title", "description", "is_public", "user", "tag_list")
     list_filter = ("is_public", "user")
     search_fields = ("url", "description")
     ordering = ("url",)
